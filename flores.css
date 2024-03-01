@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Galada&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: black; */
+    background:#000 url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghj9bINwCLBHb0eisbsNyPta830j-lSGy4cxwQnPh2D7G5VW6meZHUR8pBe_FeU-IlijZx23mDRFoBk_BkS5cma2urzcwJYMsWepbzT_1KfppJMQLfe_Uio4al0zMDPqxWNOyNByDPCdg/s1600/estrellas.png) repeat top center;
+}
+
+.estrellas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:transparent url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb_g8J7zQ1NSrzDIvootgPmtS9ivyjNQcAK1vhkReSLqVfyVYx-2v_Z4f5IV9LvFXGToZauTFFTYCXb5nLSVPAKZkG6ox8slt6hPqK0f6xck9jjnZa1vPSYCWLOf272Ezj7SmMgA5PTWQ/s1600/twinkling.png) repeat top center;
+    z-index:-2;
+
+    -moz-animation:move-twink-back 100s linear infinite;
+    -ms-animation:move-twink-back 100s linear infinite;
+    -o-animation:move-twink-back 100s linear infinite;
+    -webkit-animation:move-twink-back 100s linear infinite;
+    animation:move-twink-back 100s linear infinite;
+}
+
+.container {
+    font-size: 33vw;
+    color: red;
+    animation: 3s ease infinite corazon;
+    text-shadow: 4px 4px 25px rgba(255, 0, 0, 0.6);
+}
+
+.container:hover{
+    text-shadow: 0 0 5px rgba(255, 86, 86, 0.6),
+    0 0 25px rgba(255, 86, 86, 0.6), 0 0 50px rgba(255, 86, 86, 0.6),
+    0 0 100px rgba(255, 86, 86, 0.6);
+}
+
+.container .contenido{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Galada', cursive;
+}
+
+.container .contenido h1{
+    font-size: 25px;
+}
+
+.container .contenido h2{
+    font-size: 50px;
+}
+
+.container .contenido p{
+    font-size: 22px;
+}
+
+@keyframes corazon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
